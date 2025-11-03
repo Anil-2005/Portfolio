@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #a2b4c4;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8vw;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+.role {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #444;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #296cfb;
+}
+
+#theme-toggle {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+/* MAIN SECTION */
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px 10vw;
+  flex-wrap: wrap;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  width: 380px;
+  padding: 40px 30px;
+  background-color: #f5ede4;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.profile-card h1, 
+.profile-card h2 {
+  margin-bottom: 8px;
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background: #296cfb;
+  margin: 10px auto;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: #444;
+  font-size: 0.80em;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #222;
+  margin: 0 8px;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #296cfb;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  max-width: 550px;
+}
+
+.about-section h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.about-section h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 10px 0 25px;
+}
+
+.buttons {
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.btn.active {
+  background: #296cfb;
+  color: #fff;
+}
+
+.btn.outline {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.btn.outline:hover {
+  background: #296cfb;
+  color: #fff;
+  border-color: #296cfb;
+}
+
+.about-section p {
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  padding: 25px 10vw;
+  font-size: 0.95em;
+  color: #333;
+}
+
+footer a {
+  color: #296cfb;
+  text-decoration: none;
+}
+
+footer .social-icons {
+  margin-top: 5px;
+}
+
+/* 🌙 DARK MODE FIX */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark header,
+body.dark footer {
+  border-color: #333;
+}
+
+body.dark .role,
+body.dark .subtitle,
+body.dark .about-section p,
+body.dark footer,
+body.dark .footer-center strong {
+  color: #eee;
+}
+
+body.dark .profile-card {
+  background: #1e1e1e;
+}
+
+body.dark nav a {
+  color: #eee;
+}
+
+body.dark nav a.active,
+body.dark nav a:hover {
+  color: #79a8ff;
+}
+
+body.dark .btn.outline {
+  border-color: #eee;
+  color: #eee;
+}
+
+body.dark .btn.outline:hover {
+  background: #79a8ff;
+  color: #111;
+}
+
+body.dark .social-icons a {
+  color: #eee;
+}
+
+body.dark .social-icons a:hover {
+  color: #79a8ff;
+}
+
+/* LeetCode Icon */
+.leetcode-icon {
+  width: px;
+  height: 5px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.leetcode-icon:hover {
+  filter: none;
+  transform: scale(1.1);
+}
