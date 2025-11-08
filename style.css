@@ -6,7 +6,7 @@
 }
 
 body {
-  background: a2b4c4;
+  background-color : yellow;
   color: #111;
   transition: all 0.3s ease;
 }
@@ -255,5 +255,6 @@ body.dark .social-icons a:hover {
   filter: none;
   transform: scale(1.1);
 }
+
 
 
